@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   
+  <title>Text Formatter</title>
+</head>
+<body>
+  <div id="container">
+    <div id="heading">TEXT FORMATTER</div>
+    <div id="menu">  
+      <select id="font_select" class="menu_selects" title="Font" onchange="fontchange()">
+        <option value="Arial" style="font-family:Arial;">Arial</option>
+        <option value="Calibri" style="font-family:Calibri,Arial;">Calibri</option>
+        <option value="Georgia" style="font-family:Georgia,Arial;">Georgia</option>
+        <option value="Open Sans" style="font-family:'Open Sans',Arial;">Open Sans</option>
+        <option value="Roboto" style="font-family:Roboto,Arial;">Roboto</option>
+        <option value="Segoe UI" style="font-family:'Segoe UI',Arial;">Segoe UI</option>
+        <option value="Times New Roman"style="font-family:'Times New Roman',Arial;">Times New Roman</option>
+      </select> 
+      <select id="color_select" class="menu_selects" title="Text Color" onchange="colorchange()">
+        <option value="black" style="color:Black;">Black</option>
+        <option value="blue" style="color:blue;">Blue</option>
+        <option value="green" style="color:green;">Green</option>
+        <option value="grey" style="color:grey;">Grey</option>
+        <option value="orange" style="color:orange;">Orange</option>
+        <option value="red" style="color:red;">Red</option>
+      </select>
+
+      <button id="inc_btn" class="menu_btns" onclick="inc()" title="Increase Font">A<span class="symbol">+</span></button>
+      <button id="dec_btn" class="menu_btns" onclick="dec()" title="Decrease Font">A<span class="symbol">-</span></button>
+      <button id="up_btn" class="menu_btns" onclick="up()" title="Uppercase">a<span class="symbol">↑</span></button>
+      <button id="down_btn" class="menu_btns" onclick="down()" title="Lowercase">A<span class="symbol">↓</span></button>
+      <button id="bold_btn" class="menu_btns" onclick="bold()" title="Bold"><b>B</b></button>
+      <button id="italic_btn" class="menu_btns" onclick="italic()" title="Italics"><i>I</i></button>
+      <button id="uline_btn"class="menu_btns" onclick="uline()" title="Underline"><u>U</u></button>
+    
+    </div>
+    <textarea id="text" placeholder="Enter your text here..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
